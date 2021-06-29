@@ -45,8 +45,15 @@ body {
     font-weight: 500;
 }
 
-#container-luzes {
+#containerMaiorLuzes {
     background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container-luzes {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -61,3 +68,30 @@ body {
     background-color: white;
 }
 
+#um {
+    background-color: #5836FF;
+}
+
+#dois {
+    background-color: #33D3DE;
+}
+
+#tres {
+    background-color: #61FF45;
+}
+
+#quatro {
+    background-color: #EBC92D;
+}
+
+#cinco {
+    background-color: #FF7637;
+}
+
+#seis {
+    background-color: #FF5239;
+}
+
+#sete {
+    background-color: #fF3279;
+}
