@@ -12,23 +12,42 @@
 
 <body>
     <div id="container">
-        <h1>Luzes de Natal</h1>
+        <h1>Painel de Luzes</h1>
+        <div id="colorpickers">
+            <br>
+            <p>Escolha a cor das bolinhas</p>
+            <br>
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AF17BE" data-nmr="1">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#FB26BA" data-nmr="2">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#EC35CC" data-nmr="3">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#DD44DD" data-nmr="4">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#CE53EB" data-nmr="5">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#BF62FA" data-nmr="6">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AA71AF" data-nmr="7">
+        </div>
         <div id="controles">
-            <button id="start-pause" onclick="cores()">Start/Pause</button>
-            <label for="slider">Velocidade</label>
-            <input type="range" name="slider" value="100" id="slider" min="100" max="2000">
-            <label for="rows">Linhas</label>
-            <input type="number" name="quantidade" onchange="inserirLinhas(this.value)" value="1" id="rows" min="1" max="7">
+            <div id="caixalinhas">
+                <label for="rows">Linhas</label>
+                <input type="number" name="quantidade" oninput="inserirLinhas(this.value)" value="1" id="rows" min="1"
+                    max="7">
+            </div>
+            <div id="caixaIntervalo">
+                <div id="displayIntervalo"></div>
+                <label for="slider">Intervalo em ms</label>
+                <input type="range" name="slider" oninput="showDisplay(this.value)" value="" id="slider" min="100"
+                    max="2000">
+            </div>
+            <button id="start-pause" onclick="cores()">Start</button>
         </div>
         <div id="containerMaiorLuzes">
             <div id="container-luzes">
-                <div class="luzes" id="um"></div>
-                <div class="luzes" id="dois"></div>
-                <div class="luzes" id="tres"></div>
-                <div class="luzes" id="quatro"></div>
-                <div class="luzes" id="cinco"></div>
-                <div class="luzes" id="seis"></div>
-                <div class="luzes" id="sete"></div>
+                <div class="luzes" id="1" style="background-color: #AF17BE;"></div>
+                <div class="luzes" id="2" style="background-color: #FB26BA;"></div>
+                <div class="luzes" id="3" style="background-color: #EC35CC;"></div>
+                <div class="luzes" id="4" style="background-color: #DD44DD;"></div>
+                <div class="luzes" id="5" style="background-color: #CE53EB;"></div>
+                <div class="luzes" id="6" style="background-color: #BF62FA;"></div>
+                <div class="luzes" id="7" style="background-color: #AA71AF;"></div>
             </div>
         </div>
     </div>

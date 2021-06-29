@@ -18,6 +18,8 @@
 
 body {
     background-color: var(--azul);
+    display: flex;
+    flex-direction: column;
 }
 
 #container {
@@ -28,13 +30,28 @@ body {
     align-items: center;
 }
 
+#colorpickers {
+    background-color: papayawhip;
+    width: 100%;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.colorP {
+    border: none;
+    border-radius: 50%;
+}
+
 #controles {
     background-color: white;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #start-pause {
@@ -43,7 +60,40 @@ body {
     color: white;
     border-radius: 6px;
     font-weight: 500;
+    height: 50%;
 }
+
+#caixaIntervalo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+#displayIntervalo {
+    height: 30px;
+    padding: 5px;
+    min-width: 30px;
+    background-color: var(--azul4);
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+}
+
+#caixalinhas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rows {
+    background-color: var(--azul4);
+    color: white;
+    margin: 0 0 0 5px;
+    width: 100%;
+}
+
 
 #containerMaiorLuzes {
     background-color: black;
@@ -55,43 +105,15 @@ body {
 
 #container-luzes {
     width: 100%;
+    min-width: 210px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .luzes {
-    width: 30px;
-    height: 30px;
-    margin: 20px 20px;
+    width: 1em;
+    height: 1em;
+    margin: 1em 1em;
     border-radius: 50%;
-    background-color: white;
-}
-
-#um {
-    background-color: #5836FF;
-}
-
-#dois {
-    background-color: #33D3DE;
-}
-
-#tres {
-    background-color: #61FF45;
-}
-
-#quatro {
-    background-color: #EBC92D;
-}
-
-#cinco {
-    background-color: #FF7637;
-}
-
-#seis {
-    background-color: #FF5239;
-}
-
-#sete {
-    background-color: #fF3279;
 }
