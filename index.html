@@ -12,18 +12,53 @@
 
 <body>
     <div id="container">
-        <h1>Painel de Luzes</h1>
+        <h1 style="padding: 15px;">Luzes de Natal</h1>
         <div id="colorpickers">
             <br>
             <p>Escolha a cor das bolinhas</p>
             <br>
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AF17BE" data-nmr="1">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#FB26BA" data-nmr="2">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#EC35CC" data-nmr="3">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#DD44DD" data-nmr="4">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#CE53EB" data-nmr="5">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#BF62FA" data-nmr="6">
-            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AA71AF" data-nmr="7">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AF17BE"
+                data-nmr="1">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#FB26BA"
+                data-nmr="2">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#EC35CC"
+                data-nmr="3">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#DD44DD"
+                data-nmr="4">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#CE53EB"
+                data-nmr="5">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#BF62FA"
+                data-nmr="6">
+            <input class="colorP" oninput="mudarCor(this.value, this.dataset.nmr)" type="color" value="#AA71AF"
+                data-nmr="7">
+        </div>
+        <div id="tamanho">
+            <br>
+            <p>Escolha o tamanho das bolinhas</p>
+            <br>
+            <div id="escalasuperior">
+                <div id="displayscala1">1</div>
+                <div id="displayscala2">1</div>
+                <div id="displayscala3">1</div>
+                <div id="displayscala4">1</div>
+                <div id="displayscala5">1</div>
+                <div id="displayscala6">1</div>
+                <div id="displayscala7">1</div>
+            </div>
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="1" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="2" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="3" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="4" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="5" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="6" min="1" max="4" style="width: 40px;">
+            <input type="range" name="tamanhobolinha" oninput="definirTamanho(this.value, this.dataset.idd)" value="1"
+                data-idd="7" min="1" max="4" style="width: 40px;">
         </div>
         <div id="controles">
             <div id="caixalinhas">
@@ -50,6 +85,9 @@
                 <div class="luzes" id="7" style="background-color: #AA71AF;"></div>
             </div>
         </div>
+        <footer>
+            Desenvolvido por <a href="https://github.com/alan-cavalcante" target="_blank">Alan Cavalcante</a>
+        </footer>
     </div>
 </body>
 

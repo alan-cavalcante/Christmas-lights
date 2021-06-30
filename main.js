@@ -36,3 +36,14 @@ function mudarCor(valor, id) {
     let bolinha = document.getElementById(id)
     bolinha.style.backgroundColor = valor
 }
+
+/* Definir Tamanho das bolinhas*/
+
+function definirTamanho(valor, id) {
+    console.log(id, valor)
+    let label = document.getElementById(`displayscala${id}`)
+    label.textContent = valor
+    let bolinha = document.getElementById(id)
+    bolinha.style.width = `${valor}.1em`
+    bolinha.style.height = `${valor}.1em`
+}
